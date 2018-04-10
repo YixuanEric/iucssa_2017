@@ -1,0 +1,33 @@
+@charset "UTF-8";
+#questionlist{
+	list-style: none;
+	outline-style: none;
+	width: 100%;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+}
+#questionlist>li{
+	width: 100%;
+	margin:0;
+	padding-bottom: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-top: 3%;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: forestgreen;
+}
+#questionlist>li>p{
+	text-indent: 2em;
+	overflow-wrap: break-word;
+  	word-wrap: break-word;
+	word-break: break-word;
+	-ms-hyphens: auto;
+  	-moz-hyphens: auto;
+  	-webkit-hyphens: auto;
+  	hyphens: auto;
+}
+#questionlist>li:first-child{
+	border: none;
+}

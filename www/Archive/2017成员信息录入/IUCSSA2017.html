@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>第28届IUCSSA成员信息登记</title>
+<link href="zhaoxin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<form class="recruitForm" action="IUCSSA2017.php" method="post" name="recruitForm">
+<ul>
+	<li id="title"><center><h2>第28届IUCSSA成员信息登记</h2></center></li>
+	<hr>
+	<li>
+		<label class="itemInfo">中文姓名：</label>
+		<input type="text" name="name" required class="itemInput"/>
+	</li>
+	<li>
+		<label class="itemInfo">学校邮箱：</label>
+		<input type="email" placeholder="请填写IU邮箱" name="email" required class="itemInput"/>
+	</li>
+	<li>
+		<label class="itemInfo">FALL年级：</label>
+		<select name="standing" required class="itemInput">
+			<option value="Sophomore">Sophomore</option>
+			<option value="Junior">Junior</option>
+			<option value="Senior">Senior</option>
+			<option value="Graduate">Graduate</option>
+		</select>
+	</li>
+	<li>
+		<label class="itemInfo">手机号码：</label>
+		<input type="tel" required placeholder="请使用纯数字格式 Example: 8121231234" name="cellphone" class="itemInput" />
+	</li>
+	<li>
+		<label class="itemInfo">生日：</label>
+		<input type="date" name="bday" required placeholder="格式：mm/dd/yyyy" class="itemInput"/> 
+	</li>
+	<li>
+		<label class="itemInfo">部门：</label>
+		<select class="itemInput" name="department" required>
+			<option value="President">主席团</option>
+			<option value="Activity">Activity</option>
+			<option value="CDA">CDA</option>
+			<option value="Finance">Finance</option>
+			<option value="Media">Media</option>
+			<option value="IT">IT</option>
+			<option value="Treasury">Treasury</option>
+		</select>
+	</li>
+	<li>
+		<center><input id="submit" type="submit" value="提交"></center>
+	</li>
+	<li>
+		<center><p>如需技术支持请联系学生会IT部邮箱 <a href="mailto:iucssa.it@gmail.com">iucssa.it@gmail.com</a> 谢谢!</p></center>
+	</li>
+</ul>
+	</form>
+</body>
+</html>

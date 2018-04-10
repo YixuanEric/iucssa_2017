@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
+<script src="../../bootstrap/js/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<title>IUCSSA 春晚抽奖 幸运奖</title>
+
+</head>
+<body>
+
+<!--HeadNote DO NOT CHANGE-->
+<div id="head"></div>
+<script>
+	$('#head').load('../../HeadNote.html');
+</script>
+<!--HeadNote DO NOT CHANGE-->
+<div>
+<div class="container mainbody">
+<!--Start Editing From Here-->
+
+
+<img src="Logo.png" style="position: absolute;left: 100px;bottom: -300px;width: 100px;">
+
+<div style="margin-top: 3%;margin-bottom: 3%;text-align: center;">
+	<span style="font-size: 3em;color: rgba(182,61,50,1.00);">IUCSSA 春晚抽奖 幸运奖</span>
+</div>
+<hr>
+<div class="mainArticle">
+	<style>
+		.number{
+			font-size: 3em;
+			color: rgba(182,61,50,1.00);
+		}
+		.col-md-2{
+			line-height: 3em;
+		}
+	</style>
+	<center><h3 style="color: rgba(182,61,50,1.00);">Kroger Card</h3></center><br>
+	<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-2" style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-1"></div>
+	</div>
+	
+	<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-2" style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-1"></div>
+	</div>
+	
+	<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-2" style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-1"></div>
+	</div>
+	
+	<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-2" style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-1"></div>
+	</div>
+	
+	<center><h3 style="color: rgba(182,61,50,1.00);">零食大礼包</h3></center><br>
+	<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-2" style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-2"  style="text-align: center;">
+		<span class="number">0</span> 
+	</div>
+	<div class="col-md-1"></div>
+	</div>
+	<div class="HCenterWrapper">
+		<button onClick="clearInterval(shuffle);">STOP</button>
+	</div>
+	<script>
+		
+		var shuffle = setInterval(function(){
+			var arr = [23];
+			$('.number').each(function(){
+				do {
+					a = Math.floor(Math.random()*1860);
+					if(arr.indexOf(a) == -1){
+						$(this).html(a);
+						arr.push(a);
+						break;
+					}
+				} while(true);
+			});
+		},50);
+		
+	</script>
+	
+</div>
+
+<img src="Logo.png" style="position: absolute;right: 100px;bottom: -300px;width: 100px;">
+<!--Finish Editing At Here-->
+</div></div>
+<!--Load HeadNote and FootNote-->
+
+<div id="foot"></div>
+<script>
+	$('#foot').load('../../FootNote.html');
+</script>
+<!--Load HeadNote and FootNote-->
+
+<!--Customized CSS Must Be At The End-->
+<link href="../../css/universal.css" rel="stylesheet" type="text/css">
+<link href="../../css/FootNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/HeadNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/eventPageCommon.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<link href="../../css/form.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<!--Customized CSS Must Be At The End-->
+</body>
+</html>

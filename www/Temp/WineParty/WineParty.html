@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
+<script src="../../bootstrap/js/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<title>第二届IUCSSA毕业酒会报名</title>
+
+</head>
+<body>
+
+<!--HeadNote DO NOT CHANGE-->
+<div id="head"></div>
+<script>
+	$('#head').load('../../HeadNote.html');
+</script>
+<!--HeadNote DO NOT CHANGE-->
+<div>
+<div class="container mainbody">
+<!--Start Editing From Here-->
+
+
+
+<div style="margin-top: 3%;margin-bottom: 3%;text-align: center;">
+	<span style="font-size: 3em;color: rgba(182,61,50,1.00);">2017届中国留学生毕业酒会报名</span>
+</div>
+<hr>
+<div class="mainArticle">
+	<center><p>预定截止时间：5月3日11：59PM<br>
+套票（一张门票+一份精致甜品）：$15<br>
+门票单价：$10/张<br>
+（票价不包含酒水）<br>
+接送单程：$5<br>
+接送往返：$10<br>
+<br>
+现场购票：<br>
+门票单价：$15/张<br>
+精致甜品单价：$10/份<br>
+（票价不包含酒水）<br></p></center><br>
+	<center><p>如果您遗忘了您的唯一付款ID请重新输入相关信息即可。</p></center>
+	<div class="HCenterWrapper">
+	<form class="Form" action="wine.php" method="post" name="recruitForm" id="Form">
+		<ul>
+		<li>
+			<label class="itemInfo">中文姓名：</label>
+			<input type="text" name="name" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">学校邮箱：</label>
+			<input type="email" placeholder="请填写IU邮箱" name="email" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">手机号码：</label>
+			<input type="tel" required placeholder="请使用纯数字格式 Example: 8121231234" name="cellphone" class="itemInput" />
+		</li>
+		<li>
+			<label class="itemInfo">满21岁？</label>
+			<select name="overAge" required class="itemInput">
+				<option value="T">是</option>
+				<option value="F">否</option>
+			</select>
+		</li>
+		<li>
+			<label class="itemInfo">请选择门票类型</label>
+			<select name="ticketType" required class="itemInput">
+				<option value="A">门票 - $10</option>
+				<option value="B" >门票+1份甜点 - $15</option>
+			</select>
+		</li>
+		<li>
+			<label class="itemInfo">接送服务</label>
+			<select name="shuttle" required class="itemInput">
+				<option value="A">否</option>
+				<option value="B">单程去 - $5</option>
+				<option value="C">单程回 - $5</option>
+				<option value="D">往返 - $10</option>
+			</select>
+		</li>
+		<li>
+			<center><input id="submit" class="NAsubmitButton" type="submit" value="报名已截止"></center>
+		</li>
+		</ul>
+	</form>
+	</div>
+	<center><p>如需帮助 请联系iucssa.it@gmail.com 谢谢</p></center>
+</div>
+<!--Finish Editing At Here-->
+</div></div>
+<!--Load HeadNote and FootNote-->
+
+<div id="foot"></div>
+<script>
+	$('#foot').load('../../FootNote.html');
+</script>
+<!--Load HeadNote and FootNote-->
+
+<!--Customized CSS Must Be At The End-->
+<link href="../../css/universal.css" rel="stylesheet" type="text/css">
+<link href="../../css/FootNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/HeadNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/eventPageCommon.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<link href="../../css/form.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<!--Customized CSS Must Be At The End-->
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
+<script src="../../bootstrap/js/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="anti-cache.js"></script>
+
+<title>2017年秋季新生报名</title>
+
+</head>
+<body>
+
+<!--HeadNote DO NOT CHANGE-->
+<div id="head"></div>
+<script>
+	$('#head').load('../../HeadNote.html');
+</script>
+<!--HeadNote DO NOT CHANGE-->
+<div>
+<div class="container mainbody">
+<!--Start Editing From Here-->
+
+
+
+<div style="margin-top: 3%;margin-bottom: 3%;text-align: center;">
+	<span style="font-size: 3em;color: rgba(182,61,50,1.00);">2017年度 IUCSSA 新生接机报名</span>
+</div>
+<hr>
+<div class="mainArticle">
+	<p>同学们你们好，印第安纳大学中国学生学者联谊会在这里欢迎你们的到来。由于印第安纳波利斯机场距离学校有一个小时的车程，我们IUCSSA的同学将会在OT期间提供必要的协助。请同学们填写以下信息，以方便我们前期工作协调准备，谢谢！</p>
+	<p>报名将于<b>北京时间 7月21日 22：00 </b>截止，请同学们在此之前填写正确的信息。如有航班信息变动，可在截止日期前重新填写此表格。</p>
+	<p><span style="color: red;font-weight: bold">*由于11点左右以后没有大巴，12点以后宿舍没有check-in，我们建议晚11点以后到的同学在机场附近提前订一晚酒店。
+		</span>
+	</p>
+	
+	<p><span style="color: red;font-weight: bold">
+	**IUCSSA建议各位同学尽量在选择到达日期和OT开始日期时给自己一到两天的缓冲时间调整时差与休息。
+	</span>
+	</p>
+	
+	<p><span style="color: red;font-weight: bold">
+	IUCSSA将在报名全部结束后会发出确认邮件，请及时留意，谢谢。
+	</span>
+	</p>
+<div class="HCenterWrapper">
+<script>
+	
+	
+$(document).ready(function () {
+	"use strict";
+	$("form").submit(function(e) {
+		var ref = $(this).find("[required]");
+		$(ref).each(function(){
+			if ( $(this).val() === '' )
+			{
+				alert("您还有信息未填完整。");
+				$(this).focus();
+				e.preventDefault();
+				return false;
+			}
+		});  return true;
+	});
+});
+</script>
+	<form class="Form" action="jieji.php" method="post" name="Form" id="Form">
+		<ul>
+		<li>
+			<label class="itemInfo">中文姓名：</label>
+			<input type="text" name="name" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">学校邮箱：</label>
+			<input type="email" placeholder="请填写IU邮箱" name="email" required class="itemInput"/>
+			
+			<p class="itemHint">* 请务必仔细检查，填写正确！</p>
+		</li>
+		<li>
+			<label class="itemInfo">备用邮箱：</label>
+			<input type="email" placeholder="请填写国内邮箱" name="email2" required class="itemInput"/>
+		</li>
+		
+		<li>
+			<label class="itemInfo">微信号：</label>
+			<input type="text" name="weixin" required class="itemInput"/>
+		</li>
+		
+		<li>
+			<label class="itemInfo">手机号码：</label>
+			<input type="tel" required name="cellphone" class="itemInput" />
+			
+			<p class="itemHint">* 请在号码前加上国家区号，谢谢！</p>
+			<p class="itemHint">  例：+18121231234 （美国）</p>
+			<p class="itemHint">  例：+8613812341234 （中国）</p>
+		</li>
+		
+		<li>
+			<label class="itemInfo">航班号：</label>
+			<input type="text" name="flight" required placeholder="例: DL 180 " class="itemInput"/>
+			<p class="itemHint">* 请在航空公司代码和数字之间留一个空格，方便我们整理，谢谢！</p>
+		</li>
+		
+		<li>
+			<label class="itemInfo">航班到达日期</label>
+			<input class="itemInput" name="date" required type="date" placeholder="mm/dd/yyyy" id="dateInput" />
+			<p class="itemHint">* 请填写航班到达IND机场的Indiana当地日期</p>
+		</li>
+		<script>
+			if ( $('#dateInput')[0].type!='date'){
+				$('#dateInput').datepicker();
+			}
+			</script>
+		<li>
+			<label class="itemInfo">航班到达时间</label>
+			<input class="itemInput" name="time" required type="time" placeholder="hh:mm" id="timeInput"/>
+			<p class="itemHint">* 请填写航班到达IND机场的Indiana当地时间 24小时制</p>
+		</li>
+		<li>
+			<label class="itemInfo">父/母姓名：</label>
+			<input type="text" name="EmergencyName" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">父/母电话：</label>
+			<input type="tel" required name="EmergencyNumber" class="itemInput" />
+			
+			<p class="itemHint">* 请在号码前加上国家区号，谢谢！</p>
+			<p class="itemHint">  例：+18121231234 （美国）</p>
+			<p class="itemHint">  例：+8613812341234 （中国）</p>
+		</li>
+		<li>
+			<label class="itemInfo">是否有家长陪同：</label>
+			<select name="parent" required class="itemInput">
+				<option value="否">否</option>
+				<option value="是">是</option>
+			
+			</select>
+		</li>
+		<li>
+			<center><button class="NAsubmitButton">报名已截止</button></center>
+		</li>
+		
+		</ul>
+	</form>
+	<p>如需技术支持与帮助，请联系 iucssa.it@gmail.com ！谢谢！</p>
+	</div>
+	
+	
+	
+	
+	
+</div>
+<!--Finish Editing At Here-->
+</div></div>
+<!--FootNote DO NOT CHANGE-->
+<div w3-include-html="../../FootNote.html"></div>
+<!--FootNote DO NOT CHANGE-->
+
+<!--Load HeadNote and FootNote-->
+
+<div id="foot"></div>
+<script>
+	$('#foot').load('../../FootNote.html');
+</script>
+<!--Load HeadNote and FootNote-->
+
+<!--Customized CSS Must Be At The End-->
+<link href="../../css/universal.css" rel="stylesheet" type="text/css">
+<link href="../../css/FootNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/HeadNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/eventPageCommon.css" rel="stylesheet" type="text/css">
+
+		<!--Add Page CSS Right Here-->
+<link href="../../css/form.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+
+<!--Customized CSS Must Be At The End-->
+</body>
+</html>

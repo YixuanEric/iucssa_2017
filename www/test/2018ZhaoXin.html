@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>IUCSSA About Us</title>
+	<!--bootstrap--->
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="anti-cache.js"></script>
+</head>
+
+<body>
+	<div id="head"></div>
+	<script>
+		$('#head').load('HeadNote.html');
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.Dpt_Block').mouseenter(function() {
+				$(this).find('.Dpt_Intro').stop().animate({
+					top: '0%'
+				}, 200);
+			});
+			$('.Dpt_Block').mouseleave(function() {
+				$(this).find('.Dpt_Intro').stop().animate({
+					top: '100%'
+				}, 200)
+			});
+		});
+	</script>
+
+
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+
+	<div id="foot"></div>
+	<script>
+		$('#foot').load('FootNote.html');
+	</script>
+	<!--css--->
+
+	<link href="css/universal.css" rel="stylesheet" type="text/css">
+	<link href="css/HeadNote.css" rel="stylesheet" type="text/css">
+	<link href="css/FootNote.css" rel="stylesheet" type="text/css">
+
+	<link href="css/about.css" rel="stylesheet" type="text/css">
+</body>
+
+</html>

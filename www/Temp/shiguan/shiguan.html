@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
+<script src="../../bootstrap/js/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<title>使领馆讲座报名</title>
+
+</head>
+<body>
+
+<!--HeadNote DO NOT CHANGE-->
+<div id="head"></div>
+<script>
+	$('#head').load('../../HeadNote.html');
+</script>
+<!--HeadNote DO NOT CHANGE-->
+<div>
+<div class="container mainbody">
+<!--Start Editing From Here-->
+
+
+
+<div style="margin-top: 3%;margin-bottom: 3%;text-align: center;">
+	<span style="font-size: 3em;color: rgba(182,61,50,1.00);">使领馆讲座报名</span>
+</div>
+<hr>
+<div class="mainArticle">
+	<div class="HCenterWrapper">
+	<form class="Form" action="shiguan.php" method="post" name="recruitForm" id="Form">
+		<ul>
+		<li>
+			<label class="itemInfo">中文姓名：</label>
+			<input type="text" name="name" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">学校邮箱：</label>
+			<input type="email" placeholder="请填写IU邮箱" name="email" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">手机号码：</label>
+			<input type="tel" required placeholder="请使用纯数字格式 Example: 8121231234" name="cellphone" class="itemInput" />
+		</li>
+		<li>
+			<label class="itemInfo">年级</label>
+			<select name="year" required class="itemInput">
+				<option value="Freshman">Freshman</option>
+				<option value="Sophomore">Sophomore</option>
+				<option value="Junior">Junior</option>
+				<option value="Senior">Senior</option>
+				<option value="Other">Graduate & Phd</option>
+				<option value="Professor">Teacher & Professor</option>
+			</select>
+		</li>
+		
+		
+		<li>
+			<center><input id="submit" class="NAsubmitButton" type="submit" value="报名已截止"></center>
+		</li>
+		</ul>
+	</form>
+	</div>
+	<center><p>如需帮助 请联系iucssa.it@gmail.com 谢谢</p></center>
+</div>
+<!--Finish Editing At Here-->
+</div></div>
+<!--Load HeadNote and FootNote-->
+
+<div id="foot"></div>
+<script>
+	$('#foot').load('../../FootNote.html');
+</script>
+<!--Load HeadNote and FootNote-->
+
+<!--Customized CSS Must Be At The End-->
+<link href="../../css/universal.css" rel="stylesheet" type="text/css">
+<link href="../../css/FootNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/HeadNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/eventPageCommon.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<link href="../../css/form.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<!--Customized CSS Must Be At The End-->
+</body>
+</html>

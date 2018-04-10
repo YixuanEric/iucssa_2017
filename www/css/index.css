@@ -1,0 +1,106 @@
+@charset 'UTF-8';
+/* CSS Document */
+.mainSpace{
+	margin-top: 6%;
+	margin-bottom: 6%;
+	padding: 2%;
+}
+
+.HighlightText
+{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 38px;
+	font-weight: bold;
+	text-decoration: underline;
+    color: rgba(182,61,50,1.00);
+}
+.left{
+	padding-right: 2%;
+	border-right:medium;
+	border-right-color: lightgray;
+	border-right-style: solid;
+}
+.EventList
+{
+    font-size: 1em;
+	font-family: Verdana, Geneva, sans-serif, "Microsoft YaHei", "微软雅黑",STXihei,"华文细黑";
+    line-height: 2.50;
+	list-style: disc;
+}
+.EventList li a{
+	color:rgba(182,61,50,1.00);
+	font-size: 1.2em;
+	line-height: 1em;
+}
+.hover12 .indexImgSpace{
+	text-align: center;
+	overflow: hidden;
+  	position: relative;
+  	box-sizing: border-box;
+	padding: 0;
+}
+.hover12 .indexImgSpace img
+{
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+ 	overflow: hidden;
+  	transition: all 0.4s;
+}
+.hover12 .indexImgSpace img:hover 
+{
+	
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.hover12 .row{
+}
+.indexImgWraper{
+	padding: 1%;
+}
+.text
+{
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+    display: none;
+
+    color: black;
+}
+
+#Home_Tab{
+	background-color: black!important;
+	color: white!important;
+}
+.indexImgCaption{
+	position: absolute;
+	bottom:-100%;
+	padding:.5em;
+	margin: 0;
+	width: 100%;
+	color: white;
+	background-color: rgba(0,0,0,.6);
+}
+.urlbar{
+	display: block;
+}
+@media screen and (max-width: 1000px){
+	.left{
+		border: none;
+		padding: 3%;;
+	}
+	
+	.indexImgWraper{
+		padding: 3%;
+	}
+	.urlbar{
+		display: none;
+	}
+}
+.EventList li .disabledLinks{
+	cursor: default;
+	pointer-events: none;
+	color:black;
+}

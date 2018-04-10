@@ -1,0 +1,63 @@
+@charset "UTF-8";
+*:focus {outline: none;}
+ul{
+	padding: 0;
+	margin: 0;
+}
+body{
+	text-align: center;
+	margin-left: 0;
+	padding: 0;
+	margin: 0;
+	height: 1200px;;
+}
+.recruitForm{
+	font-size: 1.1em;
+	color: rgba(182,61,50,1.00);
+	text-align: center;
+	display: inline-block;
+}
+.recruitForm ul{
+	list-style: none;
+	list-style-position: outside;
+}
+.recruitForm li{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.itemInfo{
+	display: inline-block;
+	width:100px;
+	text-align: left;
+}
+.itemInput{
+	width: 230px;
+}
+#title{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#submit{
+	color:white;
+	font-size: .8em;
+	width: 60px;
+	height: 40px;
+	background-color: rgba(182,61,50,1.00);
+	border-radius: 2px;
+	border: none;
+}
+.recruitForm input:focus:invalid {
+	box-shadow: 0 0 10px #d45252;
+    border-color: #b03535;
+}
+@media screen and (max-width: 1000px){
+	.itemInput{
+		width:  70%;
+	}
+	.itemInfo{
+		font-size: .9em;
+		width: 25%;
+	}
+}

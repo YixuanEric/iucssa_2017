@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
+<script src="../../bootstrap/js/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<title>IUCSSA2018年度春季招新报名</title>
+
+</head>
+<body>
+
+<!--HeadNote DO NOT CHANGE-->
+<div id="head"></div>
+<script>
+	$('#head').load('../../HeadNote.html');
+</script>
+<!--HeadNote DO NOT CHANGE-->
+<div>
+<div class="container mainbody">
+<!--Start Editing From Here-->
+
+
+
+<div style="margin-top: 3%;margin-bottom: 3%;text-align: center;">
+	<span style="font-size: 3em;color: rgba(182,61,50,1.00);">IUCSSA 2018年度春季招新报名</span>
+</div>
+
+	<script>
+		$(document).ready(function() {
+	"use strict";
+	$("form").submit(function(e) {
+		var ref = $(this).find("[required]");
+		$(ref).each(function(){
+			if ( $(this).val() === '' )
+			{
+				alert("您还有信息未填完整。");
+				$(this).focus();
+				e.preventDefault();
+				return false;
+			}
+		});  return true;
+	});
+});
+	</script>
+
+	<div class="HCenterWrapper" style="font-size:1.3em">
+	<form class="Form" action="zhaoxin.php" method="post" name="Form" id="Form" target= "_self" enctype="multipart/form-data">
+		<h3>IUCSSA春季招新报名</h3>
+		<ul>
+		<li>
+			<label class="itemInfo">中文姓名：</label>
+			<input type="text" placeholder="填写中文姓名如：张三"name="name" required class="itemInput"/>
+
+		</li>
+		<li>
+			<label class="itemInfo">学校邮箱：</label>
+			<input type="email" placeholder="请填写IU邮箱" name="email" required class="itemInput"/>
+
+			<p class="itemHint">* 请务必仔细检查，填写IU邮箱，记得今年学校已经不用umail这个后缀了哟！</p>
+		</li>
+		<li>
+			<label class="itemInfo">手机号码：</label>
+			<input type="tel" placeholder="填写号码如：8123456789" name="cellphone" required class="itemInput" />
+		</li>
+		<li>
+			<label class = "itemInfo">专业: </label>
+			<input type="text" placeholder="填写专业如：Business"required name="major" required class="itemInput" />
+			<p class="itemHint">没有选择专业填写Undecided即可</p>
+		</li>
+		<li>
+			<label class = "itemInfo">选择部门：</label>
+			<select name="dept" required class="firstlvl itemInput">
+				<option value="" id="blank1"></option>
+				<option value="A">A活动部</option>
+				<option value="M">M媒体宣传部</option>
+				<option value="F">F商务部</option>
+				<option value="IT">Web网站小组</option>
+				<option value="CDA">CDA职业发展与校友部</option>
+			</select>
+			<p class="itemHint">请选择一个部门</p>
+		</li>
+
+		<li class="itemInfo">
+				<label>请提交对应部门要求的作品或简历，如没有可跳过</label>
+				<input type="file" name="fileToUpload" id="fileToUpload" class="form-control-file" accept=".jpg, .jpeg, .png, .doc, .docx, .pdf">
+				<small id="Help" class="form-text text-muted">接受10MB以下的png, jpeg, jpg, docx, pdf文件</small>
+			</li>
+		<center><button class="submitButton">提交</button></center>
+		</ul>
+		</form>
+	</div>
+</div>
+<!--Finish Editing At Here-->
+</div></div>
+<!--FootNote DO NOT CHANGE-->
+<div id="foot"></div>
+<script>
+	$('#foot').load('../../FootNote.html');
+</script>
+<!--FootNote DO NOT CHANGE-->
+
+
+<!--Customized CSS Must Be At The End-->
+<link href="../../css/universal.css" rel="stylesheet" type="text/css">
+<link href="../../css/FootNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/HeadNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/eventPageCommon.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+
+<link href="2018zhaoxin.css" rel="stylesheet" type="text/css">
+
+<link href="../../css/form.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<!--Customized CSS Must Be At The End-->
+</body>
+</html>

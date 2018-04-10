@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.footer
+{	padding-top: 2%;
+	padding-bottom: 2%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+    color: white;
+    background-color: black;
+}
+.pillar{
+	margin: 0;
+	padding: 0;
+}
+#subscribeform
+{
+    max-width: 65%;
+}
+.pillarContent{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 20%;
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-20%);
+}

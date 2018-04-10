@@ -1,0 +1,95 @@
+@charset "UTF-8";
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+.Form{
+	padding: 0;
+	width: 50%;
+	margin: auto;
+	font-size: 1.1em;
+	color: rgba(182,61,50,1.00);
+	text-align: center;
+	display: inline-block;
+}
+.Form ul{
+	list-style: none;
+	list-style-position: outside;
+}
+.Form li{
+	width: 100%;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.itemInfo{
+	display: inline-block;
+	width:100%;
+	text-align: left;
+}
+.itemInput{
+	width: 100%;
+	color:black;
+}
+select{
+	height: 2em;
+	line-height: 2em;
+}
+#title{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.itemHint{
+	margin: 0px;
+	padding: 0px;
+	font-size: .8em;
+	width: 100%;
+	text-align: left;
+	color: gray;
+}
+.Form input:focus:invalid {
+	box-shadow: 0 0 10px #d45252;
+    border-color: #b03535;
+}
+
+.NAsubmitButton{
+	border-radius: 5px;
+	border:none;
+	pointer-events: none;
+   	cursor: default;
+	text-decoration: none;
+	color:dimgrey;
+	margin-top: 1em;
+	font-size: 1.2em;
+	padding-top: .3em;
+	padding-bottom: .3em;
+	padding-left: 1em;
+	padding-right: 1em;
+	width:auto;
+	background-color: lightgrey;
+}
+.submitButton{
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	color:white;
+	margin-top: 1em;
+	font-size: 1.2em;
+	padding: .3em;
+	padding-left: 1em;
+	padding-right: 1em;
+	width:auto;
+	background-color: rgba(182,61,50,1.00);
+}
+@media screen and (max-width: 1000px){
+	.Form{
+		width: 100%;
+	}
+	.itemInfo{
+		font-size: .9em;
+	}
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
+<script src="../../bootstrap/js/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<title>The Fields Apt Open House Trip 报名</title>
+
+</head>
+<body>
+
+<!--HeadNote DO NOT CHANGE-->
+<div id="head"></div>
+<script>
+	$('#head').load('../../HeadNote.html');
+</script>
+<!--HeadNote DO NOT CHANGE-->
+<div>
+<div class="container mainbody">
+<!--Start Editing From Here-->
+
+
+
+<div style="margin-top: 3%;margin-bottom: 3%;text-align: center;">
+	<span style="font-size: 3em;color: rgba(182,61,50,1.00);">The Fields Apt Open House Trip 报名</span>
+</div>
+<hr>
+<div class="mainArticle">
+	<div class="HCenterWrapper">
+		<h3>活动时间：November 10th Friday</h3>
+	</div>
+	<div class="HCenterWrapper">
+	<form class="Form" action="fields.php" method="post" name="recruitForm" id="Form">
+		<ul>
+		<li>
+			<label class="itemInfo">中文姓名：</label>
+			<input type="text" name="name" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">学校邮箱：</label>
+			<input type="email" placeholder="请填写IU邮箱" name="email" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">手机号码：</label>
+			<input type="tel" required name="cellphone" class="itemInput" />
+		</li>
+		
+		<li>
+			<label class="itemInfo">宿舍</label>
+			<select name="dorm" required class="itemInput firstlvl">
+				<option value="Ashton"></option>
+				<option value="Briscoe">Briscoe</option>
+				<option value="Collins">Collins</option>
+				<option value="Eigenmann">Eigenmann</option>
+				<option value="Forest">Forest</option>
+				<option value="Foster">Foster</option>
+				<option value="McNutt">McNutt</option>
+				<option value="Read">Read</option>
+				<option value="Spruce">Spruce</option>
+				<option value="Teter">Teter</option>
+				<option value="Wells">Wells</option>
+				<option value="Willkie">Willkie</option>
+				<option value="Wright">Wright</option>
+				<option value="other">Other</option>
+			</select>
+		</li>
+		<li class="secondlvl" style="display: none">
+			<label class="itemInfo">Other：</label>
+			<input type="text" name="other" class="itemInput" />
+		</li>
+		<script>
+			$(document).ready(function(){
+				$('.firstlvl').bind('change',function(){
+					var value2=$('.firstlvl').val();
+					if(value2 == "other"){
+						$('.secondlvl').css('display','inline-block');
+					} else {
+						$('.secondlvl').css('display','none');
+					}
+				});
+			});
+			</script>
+		<li>
+			<label class="itemInfo">Pick-up时间：</label>
+			<input type="time" required name="pickuptime" class="itemInput" />
+			<p class="itemHint">* 接送从 13:30 开始 18:00结束</p>
+		</li>
+		
+		<li>
+			<center><input id="submit" class="submitButton" type="submit" value="报名"></center>
+		</li>
+		</ul>
+	</form>
+	</div>
+	<center><p>如需帮助 请联系iucssa.it@gmail.com 谢谢</p></center>
+</div>
+<!--Finish Editing At Here-->
+</div></div>
+<!--Load HeadNote and FootNote-->
+
+<div id="foot"></div>
+<script>
+	$('#foot').load('../../FootNote.html');
+</script>
+<!--Load HeadNote and FootNote-->
+
+<!--Customized CSS Must Be At The End-->
+<link href="../../css/universal.css" rel="stylesheet" type="text/css">
+<link href="../../css/FootNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/HeadNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/eventPageCommon.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<link href="../../css/form.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<!--Customized CSS Must Be At The End-->
+</body>
+</html>

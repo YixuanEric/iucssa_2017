@@ -1,0 +1,47 @@
+.customrow{
+	margin-bottom: 2%;
+}
+.pic{
+	max-width: 100%;
+	height: auto;
+}
+
+
+.description{
+	text-indent: 2em;
+	text-align: justify;
+	font-size: 1.25vw;
+	padding: .8em .4em;
+	background-color: #faf3eb;
+}
+.vertitext{
+	font-size: 1.2vw;
+}
+.block{
+	height: 10em;
+}
+.mobile_placeholder{
+	display: none
+}
+.urlbar{
+	display: none
+}
+@media only screen and (max-width:992px) {
+    .desktop-only {
+		display:none !important;
+    }
+	
+	.block{
+		height: auto;
+	}
+	.pic{
+		margin: 3% 0%;
+	}
+	.description{
+		font-size: 1.3em;
+		margin: 3% 0%;
+	}
+	.mobile_placeholder{
+		display: inline-block
+	}
+}

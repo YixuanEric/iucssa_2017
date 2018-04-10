@@ -1,0 +1,22 @@
+@charset "UTF-8";
+html,
+body
+{
+	width: 100%!important;
+    height: auto;
+    margin: 0px!important;
+    padding: 0px!important;
+    overflow-x: hidden!important; 
+	-webkit-overflow-scrolling: touch;
+	
+}
+
+body{
+	background-color:#EDEDED!important;
+}
+a{
+	text-decoration:none;
+}
+.urlbar{
+	display: none;
+}

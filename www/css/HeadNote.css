@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+
+.navigationBar{
+	font-family: Arial, Helvetica, Verdana, Geneva, sans-serif, "微软雅黑",STXihei,"华文细黑";
+	border: 0;
+	margin: 0!important;
+	padding: 0!important;
+}
+.navbar
+{
+    text-align: center;
+	font-weight: 500;
+    border: 0 !important;
+    border-radius: 0 !important;
+	margin: 0!important;
+	font-family: Arial, Helvetica, Verdana, Geneva, sans-serif, "微软雅黑",STXihei,"华文细黑";
+}
+.nav li{
+	margin: 0;
+}
+.navbar .navbar-nav
+{
+    display: inline-block;
+    float: none;
+		vertical-align: top;
+}
+
+.navbar .navbar-collapse
+{
+    text-align: center;
+}
+
+.nav .navbar-nav
+{
+  	padding-left: 200px;
+}
+
+.navbar-inverse .navbar-nav > li > a
+{
+    color: white !important;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus
+{
+    color: black !important;
+    background-color: rgba(182,61,50,1.00);
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus
+{
+    color: white !important;
+    background-color: rgba(182,61,50,1.00);
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus
+{
+    color: white !important;
+    background-color: rgba(182,61,50,1.00);
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus
+{
+    color: black !important;
+}
+
+.urlbar
+{
+	margin-top: -50px;
+}
+.navbar-custom
+{
+	background-color:rgba(32,32,32,0.8);
+}
+.navbar-custom .navbar-nav > li > a
+{
+	color:white;
+	font-size: 120%;
+	font-weight:normal;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+.navbar-custom .navbar-nav >li > a:hover,
+.navbar-custom .navbar-nav >li > a:visited
+
+{
+	color:white;
+	background-color:rgba(182,61,50,1.0);
+}
+
+.navbar-custom .navbar-nav >li > a:focus {
+	color: white;
+	background-color:transparent;
+}
+
+#second-nav li{
+	width: 14vw;
+	overflow: hidden;
+}
+#second-nav a{
+	font-size: 1.1vw;
+	white-space: nowrap;
+}
+#Banner{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#BannerTitle{
+	margin: 0;
+	padding: 0;
+	color: white;
+	position: absolute;
+   	top: calc(50% - 1.3em);
+   	text-align: center;
+   	width: 100%;
+	font-size: 600%;
+	line-height: 1em;
+	font-family: Arial, Helvetica, Verdana, Geneva, sans-serif, "微软雅黑",STXihei,"华文细黑";
+}
+.BannerChineseTitle{
+	font-size: 50%;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+	margin-top: .35em;;
+}
+#HeadNoteImgWrapper{
+	width: 100%;
+	position: relative;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	cursor:default;
+}
+
+@media screen and (max-width: 1000px){
+	#BannerTitle{
+		font-size: 220%;
+		top: calc(50% - 1em);
+	}
+	.urlbar{
+		display: none;
+	}
+
+}
+#BannerEnglishTitle{
+	margin: 0;
+	padding: 0;
+}

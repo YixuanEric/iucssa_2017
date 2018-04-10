@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IUB第一届王者荣耀争霸赛 - 晋级巅峰之路 个人报名</title>
+<link href="form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<form class="Form" action="wangzheGeren.php" method="post" name="Form">
+<ul>
+	<li id="title"><center><h2>IUB第一届王者荣耀争霸赛 - 晋级巅峰之路 个人报名</h2></center></li>
+	<hr>
+	<li>
+		<label class="itemInfo">姓名：</label>
+		<input type="text" name="name" required class="itemInput"/>
+	</li>
+	<li>
+		<label class="itemInfo">学校邮箱：</label>
+		<input type="email" placeholder="请填写IU邮箱" name="email" required class="itemInput"/>
+	</li>
+	<li>
+		<label class="itemInfo">偏好位置1：</label>
+		<select name="position1" required class="firstlvl itemInput">
+			<option value="" id="blank"></option>
+			<option value="ADC">ADC</option>
+			<option value="SUPP">辅助</option>
+			<option value="MID">中单</option>
+			<option value="TOP">上单</option>
+			<option value="JG">打野</option>
+		</select>
+	</li>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.firstlvl').bind('change',function(){
+				var value2=$('#secondlvl').val();
+				$('#secondlvl').children().detach();
+				var value = $(this).val();
+				console.log(value+"  "+value2);
+				if(value!=""){
+					//移除空白项
+					$('#blank').remove();
+					
+					//填充第二层所有选择
+					$('#secondlvl').html('<option value="ADC" id="ADC">ADC</option><option value="SUPP" id="SUPP">辅助</option><option value="MID" id="MID">中单</option><option value="TOP" id="TOP">上单</option><option value="JG" id="JG">打野</option>');
+					
+					//将第二层设为改变之前的选择
+					$('#secondlvl').val(value2);
+					
+					//移除第二层中第一层已选的选项
+					$('#'+value).remove();
+				}
+			}).trigger('change');
+		});
+	</script>
+	<li>
+		<label class="itemInfo">偏好位置2：</label>
+		<select name="position2" required class="itemInput" id="secondlvl">
+			
+		</select>
+	</li>
+	<li>
+		<label class="itemInfo">手机号码：</label>
+		<input type="tel" required placeholder="请使用纯数字格式 Example: 8121231234" name="cellphone" class="itemInput" />
+	</li>
+	<li>
+		<label class="itemInfo">微信号：</label>
+		<input type="text" required name="weixinID" class="itemInput" />
+	</li>
+	<li>
+		<center><input id="submit" type="submit" value="提交"></center>
+	</li>
+	<li>
+		<center><p>如需技术支持请联系学生会IT部邮箱 <a href="mailto:iucssa.it@gmail.com">iucssa.it@gmail.com</a> 谢谢!</p></center>
+	</li>
+</ul>
+	</form>
+</body>
+</html>

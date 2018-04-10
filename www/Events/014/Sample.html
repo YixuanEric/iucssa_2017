@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<img src="ThumbsUp.png" onClick="toggleLike(this,this.id)" alt="normal" id="0">
+<script>
+	//Local storage stores values as strings
+	if(window.localStorage.getItem('0') == 'true'){
+		document.getElementById('0').src = "ThumbsUp_Like.png";
+		document.getElementById('0').alt= "like";
+	}	
+</script>
+
+<script>
+	
+	function toggleLike(e,id){
+		
+		if(e.alt == "normal"){
+			action = "like"
+		} else {
+			action = "unlike"
+		}
+		
+		//AJAX
+		if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+		xmlhttp.onreadystatechange = function(){
+			//US user
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				if(e.alt == "normal"){
+					e.src="ThumbsUp_Like.png";
+					e.alt = "like";
+					window.localStorage.setItem(e.id,true);
+				} else {
+					e.src="ThumbsUp.png";
+					e.alt = "normal";
+					window.localStorage.setItem(e.id,false);
+				}
+				alert("Vote Successful");
+			//non-US user
+			} else if(xmlhttp.readyState==4 && xmlhttp.status == 403){
+				alert("this vote is US only");
+			}
+		}
+		xmlhttp.open("GET","vote.php?action="+action+"&id="+id,true);
+        xmlhttp.send();
+		
+	}
+	</script>
+
+</body>
+</html>

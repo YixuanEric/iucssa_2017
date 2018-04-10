@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
+<script src="../../bootstrap/js/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<title>IUCSSA 春晚抽奖活动 报名</title>
+
+</head>
+<body>
+
+<!--HeadNote DO NOT CHANGE-->
+<div id="head"></div>
+<script>
+	$('#head').load('../../HeadNote.html');
+</script>
+<!--HeadNote DO NOT CHANGE-->
+<div>
+<div class="container mainbody">
+<!--Start Editing From Here-->
+
+
+
+<div style="margin-top: 3%;margin-bottom: 3%;text-align: center;">
+	<span style="font-size: 3em;color: rgba(182,61,50,1.00);">IUCSSA 春晚抽奖活动 报名</span>
+</div>
+<hr>
+<div class="mainArticle">
+	<p style="text-indent: 0px;color: red;">Important Notes:</p>
+	<p>请务必准确填写以下信息以方便领奖，抽奖活动会在春节联欢晚会的节目之间进行。我们将在您领奖时重新核对您的信息，填写无效的或不准确的姓名或学生证后五位号码，将导致您无法领奖，谢谢配合。<span style="color: red">在提交成功后，系统会自动生成验证码，请截图保存，以方便领奖时复核。</span>重复报名的，IUCSSA只记录最后一次报名时的验证码作为领奖凭证。</p>
+	<div class="HCenterWrapper">
+	<form class="Form" action="lottery.php" method="post" onsubmit="return validateForm()"  name="myForm" id="Form" target="_self">
+		<ul>
+		<li>
+			<label class="itemInfo">Last Name：</label>
+			<input type="text" name="lname" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">First Name：</label>
+			<input type="text" name="fname" required class="itemInput"/>
+		</li>
+
+		<li>
+			<label class="itemInfo">IU邮箱：</label>
+			<input type="email" name="email" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">学生证/CrimsonCard最后五位</label>
+			<input type="text" name="fiveDigit" required class="itemInput"/>
+		</li>
+
+		<script>
+			function validateForm() {
+				
+				var x = document.forms["myForm"]["email"].value;
+				
+    			if (!(x.endsWith('iu.edu') || x.endsWith('indiana.edu'))) {
+					alert("请填写您的IU邮箱，谢谢！");
+					return false;
+    			}
+				
+				x = document.forms["myForm"]["fiveDigit"].value;
+				regex=/^[0-9]{5}$/
+				if(!regex.test(x)){
+					alert("请检查学生证后5位格式！")
+					return false;
+				} 
+				return true;
+				
+			}
+			</script>
+		
+		<li>
+			<center><input id="submit" class="NAsubmitButton" type="submit" value="已截止"></center>
+		</li>
+		</ul>
+	</form>
+	</div>
+	<center><p>Need help? Contact us at <a href="mailto:iucssa.it@gmail.com">iucssa.it@gmail.com</a></p></center>
+</div>
+<!--Finish Editing At Here-->
+</div></div>
+<!--Load HeadNote and FootNote-->
+
+<div id="foot"></div>
+<script>
+	$('#foot').load('../../FootNote.html');
+</script>
+<!--Load HeadNote and FootNote-->
+
+<!--Customized CSS Must Be At The End-->
+<link href="../../css/universal.css" rel="stylesheet" type="text/css">
+<link href="../../css/FootNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/HeadNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/eventPageCommon.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<link href="../../css/form.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<!--Customized CSS Must Be At The End-->
+</body>
+</html>

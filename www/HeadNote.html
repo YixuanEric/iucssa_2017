@@ -1,0 +1,94 @@
+<!--
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link href="css/universal.css" rel="stylesheet" type="text/css">
+!-->
+<link href="css/HeadNote.css" rel="stylesheet" type="text/css">
+<div class="navigationBar">
+<nav class="navbar navbar-inverse" style="font-size:1.3em;">
+  <div class="container-fluid" style="background-color:rgba(182,61,50,1.00);"><center>
+    <ul class="nav navbar-nav row">
+      <li class="col-sm-4 col-xs-4"><a id="Home_Tab" href="http://www.indiana.edu/~iucssa/index.html">Home</a></li>
+      <li class="col-sm-4 col-xs-4"><a id = "About_Tab" href="http://www.indiana.edu/~iucssa/about.html">About</a></li>
+      <li class="col-sm-4 col-xs-4"><a id = "Event_Tab" href="http://www.indiana.edu/~iucssa/eventlist.php?page=1">Events</a></li>
+	  </ul></center>
+  </div>
+</nav>
+</div>
+
+<div id="HeadNoteImgWrapper"><img src="http://www.indiana.edu/~iucssa/index_image/test_index.jpg" id="Banner">
+<h1 id="BannerTitle"><span id="BannerEnglishTitle">IUCSSA</span><p class="BannerChineseTitle">印第安纳大学中国学生学者联谊会</p></h1>
+</div>
+
+<div class = "urlbar">
+<nav class="navbar navbar-custom">
+  <ul class="nav navbar-nav" id="second-nav">
+	  <li ><a  href="http://www.indiana.edu/~iucssa/Events/012/midAutumn.html" target="_blank" id="RollingButton"><span id="text">中秋游园会</span></a>
+     <script>
+		 var indicator = 0;
+	 	var linkArray = [
+		 	'http://www.indiana.edu/~iucssa/Events/012/midAutumn.html',
+		 	'http://www.indiana.edu/~iucssa/Events/010/qipashuo.html',
+	 	];
+	 	var captionArray=[
+		 	'中秋游园会',
+		 	'IU奇葩说'
+		];
+		 function swtchButton(){
+			 indicator+=1;
+			 if(indicator==linkArray.length){
+				 indicator=0;
+			 }
+			 
+			 $('#text').animate({
+				 marginLeft:'200px'
+			 },200);
+			 
+			 setTimeout(function(){
+			 	$('#text').html(captionArray[indicator]);
+				 $('#RollingButton').attr('href',linkArray[indicator]);
+			 },205);
+			 
+			 $('#text').animate({
+				 marginLeft:'-500px',
+				 marginRight:'500px'
+			 },0);
+			 
+			 $('#text').delay(200).animate({
+				 margin:'0px'
+			 },200);
+			 
+		 }
+		function ani(){
+		 	setInterval(function(){
+				 swtchButton();
+		 	},2800);
+	 	};
+	 	ani();
+	</script>
+     
+     </li>
+      <li ><a  href="https://iu.instructure.com/" target="_blank">Canvas</a></li>
+      <li ><a  href="https://uits.iu.edu/box" target="_blank">Box</a></li>
+      <li ><a  href="https://one.iu.edu/launch-task/iu/email-gmail" target="_blank">Umail</a></li>
+      <li ><a  href="https://one.iu.edu/launch-task/iu/student-center" target="_blank">Student Ctr</a></li>
+      <li ><a  href="https://one.iu.edu/launch-task/iu/view-bursar-balance" target="_blank">Bursar</a></li>
+      
+	  </ul>
+</nav>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96833705-1', 'auto');
+  ga('send', 'pageview');
+	console.log("Counted");
+</script>

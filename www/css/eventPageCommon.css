@@ -1,0 +1,90 @@
+@charset "UTF-8";
+#Event_Tab{
+	background-color: black!important;
+	color: white!important;
+}
+.mainbody{
+	font-family: Arial, Helvetica, Verdana, Geneva, sans-serif, "微软雅黑",STXihei,"华文细黑";
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding-bottom: 1em;
+	background: white;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+#mainTitle{
+	font-size: 3em;
+	color: rgba(182,61,50,1.00);
+}
+.mainArticle{
+	font-size: 1.2em;
+	margin: 5%;
+	line-height: 2;
+	text-align: justify;
+}
+.mainArticle>p{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-indent: 2em;
+	word-break:normal;
+	word-spacing: normal;
+	text-align: justify;
+}
+
+.articleImg{
+	margin-top: 4%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+.full-lengthImg{
+	width: 100%;
+}
+.landscapeImg{
+	width: 65%;
+}
+
+
+.articleImgCaption{
+	margin-top: 1em;
+	display: inline-block;
+	text-align: center;
+	font-size: .9em;
+}
+.mainArticle .articleSubtitle{
+	margin-top: 3%;
+	margin-bottom: 2%;
+	text-align: center;
+	font-size:1.4em;
+	font-weight: bold;
+}
+.portraitImg{
+	height: 27em;
+	width: auto;
+}
+.HCenterWrapper{
+	width: 100%;
+	text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+	.landscapeImg{
+		width: 90%;
+	}
+	.portraitImg{
+		width: 14em;
+		height: auto;
+	}
+	#mainTitle{
+		font-size: 1.5em;
+	}
+	.mainArticle>p{
+		line-height: 1.5em;
+	}
+	.mainArticle>p a{
+		word-wrap: normal;
+		word-break: break-all;
+	}
+	.mainArticle .articleSubtitle{
+		font-size: 1.1em;
+	}
+}

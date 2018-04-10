@@ -1,0 +1,45 @@
+@charset "UTF-8";
+.DeptRequirementBlock{
+	border-top-style: solid;
+	border-top-width: thin;
+	border-top-color: rgba(182,61,50,1.00);
+	
+	border-left-style: solid;
+	border-left-width: thin;
+	border-left-color: rgba(182,61,50,1.00);
+	font-size: .8em;
+	height: 40em;
+}
+.DeptRequirementBlock p{
+	text-indent: 2em;
+}
+.lastRow{
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: rgba(182,61,50,1.00);
+}
+.lastColumn{
+	border-right-style: solid;
+	border-right-width: thin;
+	border-right-color: rgba(182,61,50,1.00);
+}
+.DeptRequirementBlock li{
+	text-indent: 0;
+}
+.DeptRequirementBlock ul{
+	padding-left: 1em;
+	margin: 0;
+}
+.DeptName{
+	font-weight: bold;
+}
+@media screen and (max-width: 1000px){
+	.DeptRequirementBlock{
+		border-width: thin;
+		border-style: solid;
+		border-color: rgba(182,61,50,1.00);
+	}
+}
+.mainArticle li{
+	text-indent: 0;
+}

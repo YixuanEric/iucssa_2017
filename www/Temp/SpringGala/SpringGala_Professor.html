@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
+<script src="../../bootstrap/js/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<title>The Spring Gala 2018 RSVP</title>
+
+</head>
+<body>
+
+<!--HeadNote DO NOT CHANGE-->
+<div id="head"></div>
+<script>
+	$('#head').load('../../HeadNote.html');
+</script>
+<!--HeadNote DO NOT CHANGE-->
+<div>
+<div class="container mainbody">
+<!--Start Editing From Here-->
+
+
+
+<div style="margin-top: 3%;margin-bottom: 3%;text-align: center;">
+	<span style="font-size: 3em;color: rgba(182,61,50,1.00);">The Spring Gala 2018 RSVP</span>
+</div>
+<hr>
+<div class="mainArticle">
+	<p style="text-indent: 0px;color: red;">Important Notes:</p>
+	<p>Due to limited space we have, only families with a size of three or smaller will be seated in the VIP section. If you are bringing more than two family members with you, you are still welcome to join the gala in regular seating sections, and you don't need to submit this form. We apologize for any inconvenience.</p>
+	<div class="HCenterWrapper">
+	<form class="Form" action="Professor.php" method="post" name="recruitForm" id="Form" target="_self">
+		<ul>
+		<li>
+			<label class="itemInfo">First Name：</label>
+			<input type="text" name="fname" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">Last Name：</label>
+			<input type="text" name="lname" required class="itemInput"/>
+		</li>
+		<li>
+			<label class="itemInfo">IU Email Address：</label>
+			<input type="email" name="email" required class="itemInput"/>
+		</li>
+		<!--
+		<li>
+			<label class="itemInfo">手机号码：</label>
+			<input type="tel" required name="cellphone" class="itemInput" />
+		</li>
+		-->
+		<li>
+			<label class="itemInfo">Are you coming to the Spring Festival Gala?</label>
+			<select name="attend" required class="itemInput firstlvl">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				
+			</select>
+		</li>
+		<li class="secondlvl">
+			<label class="itemInfo">How many family members are you bringing (including yourself)?</label>
+			<select name="family" required class="itemInput firstlvl">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+			
+		</li>
+		<script>
+			$(document).ready(function(){
+				$('.firstlvl').bind('change',function(){
+					var value2=$('.firstlvl').val();
+					if(value2 == "Yes"){
+						$('.secondlvl').css('display','inline-block');
+					} else {
+						$('.secondlvl').css('display','none');
+					}
+				});
+			});
+			</script>
+		
+		<li>
+			<center><input id="submit" class="submitButton" type="submit" value="Submit"></center>
+		</li>
+		</ul>
+	</form>
+	</div>
+	<center><p>Need help? Contact us at <a href="mailto:iucssa.it@gmail.com">iucssa.it@gmail.com</a></p></center>
+</div>
+<!--Finish Editing At Here-->
+</div></div>
+<!--Load HeadNote and FootNote-->
+
+<div id="foot"></div>
+<script>
+	$('#foot').load('../../FootNote.html');
+</script>
+<!--Load HeadNote and FootNote-->
+
+<!--Customized CSS Must Be At The End-->
+<link href="../../css/universal.css" rel="stylesheet" type="text/css">
+<link href="../../css/FootNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/HeadNote.css" rel="stylesheet" type="text/css">
+<link href="../../css/eventPageCommon.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<link href="../../css/form.css" rel="stylesheet" type="text/css">
+		<!--Add Page CSS Right Here-->
+<!--Customized CSS Must Be At The End-->
+</body>
+</html>
