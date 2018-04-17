@@ -25,41 +25,41 @@
 <div class = "urlbar">
 <nav class="navbar navbar-custom">
   <ul class="nav navbar-nav" id="second-nav">
-	  <li ><a  href="http://www.indiana.edu/~iucssa/Events/012/midAutumn.html" target="_blank" id="RollingButton"><span id="text">中秋游园会</span></a>
+	  <li ><a  href="http://www.indiana.edu/~iucssa/Events/012/midAutumn.html" target="_blank" id="RollingButton"><span id="text">2017中秋游园会</span></a>
      <script>
 		 var indicator = 0;
 	 	var linkArray = [
-		 	'http://www.indiana.edu/~iucssa/Events/012/midAutumn.html',
-		 	'http://www.indiana.edu/~iucssa/Events/010/qipashuo.html',
+		 	'http://www.indiana.edu/~iucssa/Events/016/Performance.html',
+      'http://www.indiana.edu/~iucssa/Events/012/midAutumn.html'
 	 	];
 	 	var captionArray=[
-		 	'中秋游园会',
-		 	'IU奇葩说'
+		 	'2018春晚回顾',
+		 	'2017中秋游园会'
 		];
 		 function swtchButton(){
 			 indicator+=1;
 			 if(indicator==linkArray.length){
 				 indicator=0;
 			 }
-			 
+
 			 $('#text').animate({
 				 marginLeft:'200px'
 			 },200);
-			 
+
 			 setTimeout(function(){
 			 	$('#text').html(captionArray[indicator]);
 				 $('#RollingButton').attr('href',linkArray[indicator]);
 			 },205);
-			 
+
 			 $('#text').animate({
 				 marginLeft:'-500px',
 				 marginRight:'500px'
 			 },0);
-			 
+
 			 $('#text').delay(200).animate({
 				 margin:'0px'
 			 },200);
-			 
+
 		 }
 		function ani(){
 		 	setInterval(function(){
@@ -68,14 +68,14 @@
 	 	};
 	 	ani();
 	</script>
-     
+
      </li>
       <li ><a  href="https://iu.instructure.com/" target="_blank">Canvas</a></li>
       <li ><a  href="https://uits.iu.edu/box" target="_blank">Box</a></li>
       <li ><a  href="https://one.iu.edu/launch-task/iu/email-gmail" target="_blank">Umail</a></li>
       <li ><a  href="https://one.iu.edu/launch-task/iu/student-center" target="_blank">Student Ctr</a></li>
       <li ><a  href="https://one.iu.edu/launch-task/iu/view-bursar-balance" target="_blank">Bursar</a></li>
-      
+
 	  </ul>
 </nav>
 </div>
