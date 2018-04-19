@@ -1,0 +1,50 @@
+body{
+  font-family: sans-serif;
+  margin:0;
+  min-width: 55em;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding: .8em;
+    margin: 0 3em;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+  background: white;
+  color:black;
+}
+
+.container{
+  padding-top: 1em;
+  display: flex;
+  height:25em;
+  background: #F5F5DC;
+  justify-content: center;
+}
+
+.item:nth-child(2){
+  align-self: center;
+}
+.item:nth-child(3){
+  align-self: flex-end;
+}
+.container span{
+  text-align: center;
+  width:1.5em;
+  height:1.5em;
+  font-size:5em;
+  background: #F33333;
+  line-height:1.5em;
+  color: white;
+}

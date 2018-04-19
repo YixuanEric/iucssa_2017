@@ -1,0 +1,44 @@
+p,a{
+  font-family: "Microsoft YaHei",sans-serif;
+  font-size: 1.1em;
+}
+
+.countainer{
+  display: flex;
+  flex-direction:row;
+
+}
+.poster{
+  min-width:42%;
+  height:auto;
+  order:1;
+  margin:1em 2em;
+  padding:0 ;
+}
+.poster img{
+
+  width:100%;
+  height: auto;
+}
+
+.paragraph{
+  padding:1em;
+  text-align: center;
+  order:2;
+}
+
+.applyButton{
+  margin:0 auto;
+  width:30%;
+  height:10%;
+  background: rgba(182,61,50,1.00);
+  padding:1em;
+
+}
+
+.applyButton a{
+  display: block;
+  color:white;
+  text-decoration: none;
+   font-size: 2em;
+}
